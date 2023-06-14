@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .container {
+        background: black;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(147, 144, 144);
+        margin-right: 60px;
+        margin-left: 2px;
+      }
+      a:hover {
+        color: rgba(246, 246, 249, 0.913);
+      }
+      .remove {
+        color: rgb(97, 26, 26);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .remove:hover {
+        font-size: 17px;
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#"><img src="img/logo.jpeg" width="125px" /></a>
+        </div>
+        <nav>
+          <ul id="MenuItem">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-------------car item details------------->
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/prod3.png" />
+            </div>
+            <p>Red Printed T-Shirt</p>
+            <small>Price: $48.00</small>
+            <br />
+            <p class="remove">Remove</p>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$48.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/prod5.png" />
+            </div>
+            <p>Black T-Shirt</p>
+            <small>Price: $15.00</small>
+            <br />
+            <p class="remove">Remove</p>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$15.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/prod8.png" />
+            </div>
+            <p>Red T-Shirt</p>
+            <small>Price: $18.00</small>
+            <br />
+            <p class="remove">Remove</p>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$18.00</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$81.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$14.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$95.00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!--------footer---->
+    <footer>
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Our Headquarter</h1>
+          <ul class="fList">
+            <li class="fListItem">Kathmandu Metropolitan,</li>
+            <li class="fListItem">Kathmandu, Nepal</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">General Queries</h1>
+          <ul class="fList">
+            <li class="fListItem">vastralaya@gmail.com</li>
+            <li class="fListItem">YourVastra12@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Call Us</h1>
+          <ul class="fList">
+            <li class="fListItem">+977 9892330032</li>
+            <li class="fListItem">+977 9800144777</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footerRight">
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Join Our Community</h1>
+          <div class="fMail">
+            <input type="text" placeholder="your@gmail.com" class="fInput" />
+            <button class="fButton">Join!</button>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle1">Follow Us</h1>
+          <div class="fIcons">
+            <img src="fac.png" alt="" class="fIcon" />
+            <img src="insta.png" alt="" class="fIcon" />
+            <img src="twi.png" alt="" class="fIcon" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-----------js for toggle menu----------------->
+    <script>
+      var menuItem = document.getElementById("MenuItem");
+
+      MenuItem.style.maxheight = "0px";
+
+      function menutoggle() {
+        if (MenuItem.style.maxHeight == "0px") {
+          MenuItem.style.maxHeight = "200px";
+        } else {
+          MenuItem.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
+<!-- 3rd page end -->

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Account</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+
+        background: radial-gradient(
+          circle at 50% 50%,
+          #e03c8a 0%,
+          #673ab7 100%
+        );
+        background-blend-mode: multiply;
+      }
+
+      #options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        padding: 20px;
+      }
+
+      .anchor {
+        padding: 8px 12px;
+        width: 200px;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #3498db;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #options a:last-child {
+        margin-bottom: 0;
+      }
+
+      #options a:hover {
+        background-color: #2980b9;
+      }
+
+      #options h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+      }
+      .logout {
+        padding: 8px 12px;
+        width: 200px;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fff;
+        background-color: black;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+      .logout:hover {
+        background: red;
+      }
+      u {
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="options">
+      <h1>Account Information</h1>
+      <a href="editProfile.html" class="anchor">Edit Profile</a>
+      <a href="#" class="anchor">Notifications</a>
+      <a href="#" class="anchor">Settings</a>
+      <button class="logout">Logout</button>
+      <a href="index.html"><u>Home Page</u></a>
+    </div>
+  </body>
+</html>
